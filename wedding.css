@@ -1,0 +1,76 @@
+		body{
+			/*font-family: 'Playfair Display', serif;		
+			font-size: 36px;
+			*/
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			/* linen */
+			#background-color: #F8F0DD;			
+		}
+
+		@font-face {
+			font-family: 'kepler-std';
+			src: url('fonts/KeplerStd-Regular.ttf') format('truetype');			
+		}
+
+		h2 {
+			margin: 30px;
+		}
+        #map {
+            width: 750px;
+            height: 500px;
+        }		
+		.coupleheaderimage{					
+			width: 50%;
+		}
+		.holderpane{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;	
+			background-color: white;
+			/* Anzac */
+			border-color: #DFB349;	
+			border-style: solid;
+
+		}
+		.heidilink {
+			text-decoration: none;
+		}
+		.horizontal-child {
+			#min-width: 128px;
+		}
+		.heidilink:hover {
+			text-decoration: underline;	
+		}
+		.marriedheading {
+			font-family: 'kepler-std', serif;
+			font-size: 64px;
+			/*
+			font-family: 'Playfair Display', serif;
+			font-size: 64px;
+			*/
+		}
+
+		#flexparent {
+ 			width: auto;   
+ 			margin-left: 15%; 
+ 			margin-right: 15%;		
+		}
+		.info-section {
+			width : 70%;
+		}
+		.innersection {
+			padding: 25px; 
+
+		}
+		.horizontal-parent{
+			display: flex;
+			margin: 56px;
+
+
+		}
+		.parentmap{
+			justify-content: center;
+			display: flex;
+		}
