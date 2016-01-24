@@ -21,7 +21,7 @@
 
 			</div>
 			<hr>			 				
-			<div class="midheadingspacing midheadingfont debugsize" >
+			<div id="location" class="midheadingspacing midheadingfont debugsize" >
 				Location
 			</div>
 			<div class="sectionitemtext sectionitemfont debugsize">
@@ -42,7 +42,7 @@
 					</div>
 					
 				</div>-->
-									<div class="blank128x128 debugsize" >
+					<div class="blank128x128 debugsize" >
 					</div>
 
 				<div>
@@ -58,17 +58,17 @@
 			</div>
 		-->
 			<hr>
-			<div class="midheadingspacing midheadingfont debugsize" >
+			<div id="whattowear" class="midheadingspacing midheadingfont debugsize" >
 				What to wear
 			</div>
 			<div class="sectionitemtext sectionitemfont debugsize">
 				Dress for afternoon garden party.
 				Let us know if you have any dietary requirements.
 			</div>
-			<div class="visualbreak">
+			<div class="visualbreak"> 
 
 				<div>
-					<img clas="location-image" style="height:170px" src="heide/location-655-344.jpg" />
+					<img clas="location-image" style="height:170px" src="location-655-344.jpg" />
 				</div>
 				<div>
 					<img src="dress-code-rectangle.jpg" style="height:170px" />
@@ -79,23 +79,23 @@
 			<div class="midheadingspacing midheadingfont debugsize" >					
 			</div>
 			<hr>
-			<div class="rsvpformholder">		
-				<form class="debugsize" action="http://formspree.io/linsdayloughlin@gmail.com" method="post">
+			<div id="rsvp" class="rsvpformholder">		
+				<form class="debugsize" action="http://formspree.io/lindsayloughlin@gmail.com" method="post">
 					<div class="formitemholder midheadingfont">						
 						Please RSVP by 29 February
 					</div>
 
 					<div class="formitemholder">
 						<div class="sectionitemfont">Your name(s)</div>
-						<div><input class="sectionitemfont rsvpinput" type="text" placeholder="Enter names"></input></div>
+						<div><input name="attendname" class="sectionitemfont rsvpinput" type="text" placeholder="Enter names" required></input></div>
 					</div>
 					<div class="formitemholder">
 						<div class="sectionitemfont">Your email(s)</div>
-						<div><input class="sectionitemfont rsvpinput" type="text" placeholder="Enter email"></input></div>
+						<div><input name="attendemail" class="sectionitemfont rsvpinput" type="text" placeholder="Enter email"></input></div>
 					</div>
 					<div class="formitemholder">
 						<div class="sectionitemfont">Are you able to attend?</div>
-						<div><select class="sectionitemfont"> 
+						<div><select name="anbletoattend" class="sectionitemfont"> 
 								<option value="yes">Yes, Attending</option>
 								<option value="no">Not able to make it</option>
 								<option value="unsure">Not sure</option>
@@ -106,9 +106,8 @@
 					<div class="formitemholder">
 						<div class="sectionitemfont">Any dietry or other special requirements?
 						</div>
-						<textarea class="sectionitemfont rsvpinput" type="text" placeholder="Dietry requirements"></textarea>
+						<textarea name="specialrequirements" class="sectionitemfont rsvpinput" type="text" placeholder="Dietry requirements"></textarea>
 					</div>
-
 
 					<div class="formitemholder">
 						<input class="sectionitemfont" type="submit" value="Send" />
@@ -117,7 +116,7 @@
 
 			</div>
 			<hr>
-			<div class="midheadingspacing midheadingfont debugsize" >
+			<div id="heidimap" class="midheadingspacing midheadingfont debugsize" >
 				Location of Heide Museum of Modern Art 
 			</div>
 
@@ -130,7 +129,7 @@
 					</div>				
 			</div>
 			<hr>
-			<div class="midheadingspacing midheadingfont debugsize">
+			<div id="ceremonymap" class="midheadingspacing midheadingfont debugsize">
 				Map of ceremony and reception locations
 			</div>
 			<div class="heidemapparent">
@@ -142,19 +141,22 @@
 			<div class="midheadingspacing midheadingfont debugsize">
 			Look forward to seeing you there.
 			</div>
+			<div>
+				<img src="wedding-jump-correct-small.jpg" style="height:512px" />				
+			</div>
 			<div class="footercontainer">
 				<!--<img src="honey-sale.jpg" style="width:256px;height:256px" alt="daylesford honey" />-->
-
-				<img src="wedding-jump-correct-small.jpg" style="height:512px" />				
+				
+				<!--
 				<div>
 					<div>
-					<img src="vauxhall.jpg"  style="height:64px" alt="Our new house" />
+					<img src="vauxhall-small.jpg"  style="height:64px" alt="Our new house" />
 					</di>
 					<div>
 						<img src="honey-sale.jpg" style="height:256px" alt="daylesford honey" />						
 					</div>
 				</div>
-
+				-->
 				<!--img src="long-melbourne.jpg" />-->
 
 
