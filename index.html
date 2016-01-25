@@ -5,6 +5,7 @@
 -->
 	<link href='style-wedding.css' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src="wedding.js"></script>
 
 	<body >
@@ -12,43 +13,14 @@
 			<div class="weddingheading debugsize headingtext headingsize">
 				Lucille and Lindsay 2016 
 			</div>
-			<div class="infostatement debugsize headingtext subsize">
-				We're getting married!
-			</div>
 		</div>
-		<div class="midcontainer altdebugsize">
-			<div class="linkstocontent">
-
-			</div>
-			<hr>			 				
+		<div class="midcontainer altdebugsize">		 				
 			<div id="location" class="midheadingspacing midheadingfont debugsize" >
-				Location
-			</div>
+				We're getting married!
+				</div>
 			<div class="sectionitemtext sectionitemfont debugsize">
-				Join us on 14 May 2016 at the Heide Museum of Modern Art at 3.30pm. The ceremony site will be located at the Oak tree near next to the 'Theoretical Matter' sculpture. Reception to allow at Cafe Vue, also located in the grounds of Heide from 6pm.
-			</div>
-
-			<div class="visualbreak">
-				<div>
-					<img src="hong-kong.jpg" style="height:256px;" alt="lucille growing up"/>		
-				</div>
-				<!--<div class="innerbreak debugsize" style="max-hight:300px;width:512px">-->
-				<!--
-					<div >
-						<img src="honey-sale.jpg" style="height:128px" alt="daylesford honey" />
-					</div>
-					<div>	
-						<img src="dress-code-rectangle.jpg" style="height:128px" alt="cow" />
-					</div>
-					
-				</div>-->
-					<div class="blank128x128 debugsize" >
-					</div>
-
-				<div>
-					<img src="tram-trim.jpg" style="height:256px" alt="86 tram melbourne" />
-				</div>
-			</div>
+				Join us on 14 May 2016 at the Heide Museum of Modern Art at 3.30pm. The ceremony site will be located at the Oak tree near next to the 'Theoretical Matter' sculpture. Reception to follow at Cafe Vue, also located in the grounds of Heide from 6pm.
+			</div>		
 			<!--	
 			<div class="midheadingspacing midheadingfont debugsize">
 				Reception
@@ -57,31 +29,33 @@
 				Reception to allow at Cafe Vue, also located in the grounds of the Heide from 6pm.
 			</div>
 		-->
+			<div class="visualbreak"> 
+ 
+                     <div>
+ 				 <img clas="location-image" style="height:170px" src="location-655-344.jpg" />
+                              </div>
+                              <div>
+                                      <img src="dress-code-rectangle.jpg" style="height:170px" />
+                               </div>
+                </div>
+	
 			<hr>
 			<div id="whattowear" class="midheadingspacing midheadingfont debugsize" >
 				What to wear
 			</div>
 			<div class="sectionitemtext sectionitemfont debugsize">
 				Dress for afternoon garden party.
-				Let us know if you have any dietary requirements.
 			</div>
-			<div class="visualbreak"> 
 
-				<div>
-					<img clas="location-image" style="height:170px" src="location-655-344.jpg" />
-				</div>
-				<div>
-					<img src="dress-code-rectangle.jpg" style="height:170px" />
-				</div>															
-			</div>
 			<div class="midheadingfont midpartspacing debugsize">				
 			</div>
 			<div class="midheadingspacing midheadingfont debugsize" >					
 			</div>
 			<hr>
 			<div id="rsvp" class="rsvpformholder">		
-				<form class="debugsize" action="http://formspree.io/lindsayloughlin@gmail.com" method="post">
-					<div class="formitemholder midheadingfont">						
+				<!-- " -->
+				<form id="rsvpform" class="debugsize" action="http://formspree.io/lindsayloughlin@gmail.com" method="post">
+					<div class="formitemholder midheadingfont">				
 						Please RSVP by 29 February
 					</div>
 
@@ -90,30 +64,35 @@
 						<div><input name="attendname" class="sectionitemfont rsvpinput" type="text" placeholder="Enter names" required></input></div>
 					</div>
 					<div class="formitemholder">
-						<div class="sectionitemfont">Your email(s)</div>
+						<div class="sectionitemfont">Your email</div>
 						<div><input name="attendemail" class="sectionitemfont rsvpinput" type="text" placeholder="Enter email"></input></div>
 					</div>
 					<div class="formitemholder">
 						<div class="sectionitemfont">Are you able to attend?</div>
 						<div><select name="anbletoattend" class="sectionitemfont"> 
 								<option value="yes">Yes, Attending</option>
-								<option value="no">Not able to make it</option>
-								<option value="unsure">Not sure</option>
+								<option value="no">No sorry!</option>
 							</select>
 						</div>
 					</div>
 
 					<div class="formitemholder">
-						<div class="sectionitemfont">Any dietry or other special requirements?
+						<div class="sectionitemfont">Any dietary or other special requirements?
 						</div>
 						<textarea name="specialrequirements" class="sectionitemfont rsvpinput" type="text" placeholder="Dietry requirements"></textarea>
 					</div>
 
-					<div class="formitemholder">
-						<input class="sectionitemfont" type="submit" value="Send" />
-					</div>
-				</form>								
+					<!-- <input type="hidden" name="_next" value="//lindsayandlucille.com?thanks"/>-->
+					<input type="hidden" name="_subject" value="Wedding RSVP" />
+				</form>	
 
+				<div class="formitemholder">
+					<input id="submitrsvp" class="sectionitemfont" type="submit" value="Send RSVP" />
+				</div>
+
+				<div id="rsvpthanks"  class="midheadingspacing midheadingfont debugsize" style="display:none">
+					Thanks for getting in touch. Lucille and Lindsay ;)
+				</div>
 			</div>
 			<hr>
 			<div id="heidimap" class="midheadingspacing midheadingfont debugsize" >
@@ -139,7 +118,7 @@
 			</div>
 			<hr>
 			<div class="midheadingspacing midheadingfont debugsize">
-			Look forward to seeing you there.
+			Look forward to seeing you there
 			</div>
 			<div>
 				<img src="wedding-jump-correct-small.jpg" style="height:512px" />				
@@ -175,5 +154,5 @@
 		</div>
 
 		<!-- I probably should have used a template ;) -->
-	</body>
+	</body>	
 </html>
