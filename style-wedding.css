@@ -152,23 +152,24 @@
 
 		.footercontainer 
 		{
+			/*
 			 vertical-align:middle; 
 			 text-align:center;
-			/*
+			*/
 			display: flex;
-			 flex-wrap: nowrap;
+			flex-wrap: nowrap;
 			align-items: center;
 			justify-content: center;
-			*/
+			
 		}
-
+/*
 		.footercontainer img 
 		{
 			display: block;
     		margin-left: auto;
     		margin-right: auto;
 		}
-
+*/
 		.rsvpinput {
 			min-width: 500px;
 		}
