@@ -1,17 +1,18 @@
 <html>
-	<!--
-	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
--->
+	<head>
 	<link href='style-wedding.css' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 	<script type="text/javascript" src="wedding.js"></script>
 
+ 	<!-- GA SC-->
+ 	<script type="text/javascript" src="analytics.js"></script>
+	</head>
 	<body >
 		<div class="headimage">
 			<div class="weddingheading debugsize headingtext headingsize">
-				Lucille and Lindsay 2016 
+				<!-- stupid safari doesn't support flex-box -->
+				<span> Lucille and Lindsay 2016 </span>
 			</div>
 		</div>
 		<div class="midcontainer altdebugsize">		 				
@@ -19,24 +20,16 @@
 				We're getting married!
 				</div>
 			<div class="sectionitemtext sectionitemfont debugsize">
-				Join us on 14 May 2016 at the Heide Museum of Modern Art at 3.30pm. Reception to follow at Cafe Vue, also located in the grounds of Heide from 6pm.
+				Join us on 14 May 2016 at the Heide Museum of Modern Art at 3.30pm. Reception to follow at Cafe Vue, also located at the Heide from 6pm.
 			</div>
-			<!--	
-			<div class="midheadingspacing midheadingfont debugsize">
-				Reception
-			</div>		
-			<div class="sectionitemtext sectionitemfont debugsize">
-				Reception to allow at Cafe Vue, also located in the grounds of the Heide from 6pm.
-			</div>
-		-->
 			<div class="visualbreak"> 
  
-                     <div>
- 				 <img clas="location-image" style="height:170px" src="location-655-344.jpg" />
-                              </div>
-                              <div>
-                                      <img src="dress-code-rectangle.jpg" style="height:170px" />
-                               </div>
+                     <span class="breakvisualitem">
+ 				 <img clas="location-image" style="height:170px"	 src="location-655-344.jpg" />
+                              </span>
+                  <span class="breakvisualitem">
+                          <img src="dress-code-rectangle.jpg" style="height:170px" />
+                   </span>
                 </div>
 	
 			<hr>
@@ -44,9 +37,15 @@
 				What to wear
 			</div>
 			<div class="sectionitemtext sectionitemfont debugsize">
-				Dress for afternoon garden party.
+				Dress for an afternoon garden party.
 			</div>
-
+			<hr>	
+			<div id="gifts" class="midheadingspacing midheadingfont debugsize">
+				Gifts
+			</div>
+			<div class="sectionitemtext sectionitemfont debugsize">
+				Please no gifts! We simply look forward to your company.
+			</div>
 			<div class="midheadingfont midpartspacing debugsize">				
 			</div>
 			<div class="midheadingspacing midheadingfont debugsize" >					
@@ -54,22 +53,22 @@
 			<hr>
 			<div id="rsvp" class="rsvpformholder">		
 				<!-- " -->
-				<form id="rsvpform" class="debugsize" action="//formspree.io/lindsayloughlin@gmail.com" method="post">
-					<div class="formitemholder midheadingfont">				
+				<form id="rsvpform" class="midheadingspacing debugsize" action="//formspree.io/lindsayloughlin@gmail.com" method="post">
+					<div class="formitemholder midheadingfont">
 						Please RSVP by 29 February	
 					</div>
 
 					<div class="formitemholder">
 						<div class="sectionitemfont">Your name(s)</div>
-						<div><input name="attendname" class="sectionitemfont rsvpinput" type="text" placeholder="Enter names" required></input></div>
+						<div><input name="attendname" class="sectionitemfont rsvpinput" type="text" required></input></div>
 					</div>	
 					<div class="formitemholder">
 						<div class="sectionitemfont">Your email</div>
-						<div><input name="attendemail" class="sectionitemfont rsvpinput" type="text" placeholder="Enter email"></input></div>
+						<div><input name="attendemail" class="sectionitemfont rsvpinput" type="text" ></input></div>
 					</div>
 					<div class="formitemholder">
 						<div class="sectionitemfont">Are you able to attend?</div>
-						<div><select name="anbletoattend" class="sectionitemfont"> 
+						<div><select  name="anbletoattend" class="sectionitemfont"> 
 								<option class="sectionitemfont" value="yes">Yes, Attending</option>
 								<option class="sectionitemfont" value="no">No sorry!</option>
 							</select>
@@ -79,18 +78,18 @@
 					<div class="formitemholder">
 						<div class="sectionitemfont">Any dietary or other special requirements?
 						</div>
-						<textarea name="specialrequirements" class="sectionitemfont rsvpinput" type="text" placeholder="Dietary requirements"></textarea>
+						<textarea name="specialrequirements" class="sectionitemfont rsvpinput" type="text"></textarea>
 					</div>
 
 					<!-- <input type="hidden" name="_next" value="//lindsayandlucille.com?thanks"/>-->
 					<input type="hidden" name="_subject" value="Wedding RSVP" />
 
 					<div class="formitemholder">
-						<input id="submitrsvp" class="sectionitemfont" type="submit" value="Send RSVP" />
+						<button id="submitrsvp" class="buttonsize rsvpbutton sectionitemfont" type="submit" />Send RSVP</button>
 					</div>
 				</form>	
 				<div id="rsvpthanks"  class="midheadingspacing midheadingfont debugsize" style="display:none">
-					Thanks for getting in touch. Lucille and Lindsay ;)
+					Thanks for RSVPing to our wedding
 				</div>
 			</div>
 			<hr>
@@ -103,7 +102,7 @@
 			</div>
 			<div class="googlemapparent">
 				
-					<div id="heidemap" style="width:80%;min-height:768px">
+					<div id="heidemap" style="width:100%;height:500">
 					</div>				
 			</div>
 			<hr>
@@ -112,16 +111,18 @@
 			</div>
 			<div class="heidemapparent">
 				<div>
-					<img src="heide-marked-map.jpg" style="width:768px;height:768px"/> 
+					<img src="heide-marked-map.jpg" style="width:100%"/> 
 				</div>
 			</div>
 			<hr>
 			<div class="midheadingspacing midheadingfont debugsize">
-			Look forward to seeing you there
+			Looking forward to seeing you there
 			</div>
+
+					<img src="wedding-jump-correct-small.jpg" style="width:100%" />				
 			<div class="footercontainer">
 				<div>
-					<img src="wedding-jump-correct-small.jpg" />	
+
 				</div>	
 				<!--<img src="honey-sale.jpg" style="width:256px;height:256px" alt="daylesford honey" />-->
 				

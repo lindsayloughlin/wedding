@@ -1,27 +1,22 @@
 	
 		.headimage {
+			display: inline-block;
 			background-image: url("couple-shot-sillouett.jpg");
 		/*background-color: red; */
 			background-size: cover;
 			width: 100%;
 			height: 575px;
 			background-repeat: no-repeat;
-			display: flex;			
+			/*display: flex;			
 			justify-content: center;
-			flex-direction: column;		
-			margin-bottom: 30px;
+			flex-direction: column;*/		
+			margin-bottom: 20px;
 		}
-		.footerimage {
-			background-image: url('wedding-jump-correct-small.jpg');
-			background-size: cover;
-			width: 100%;
-			height: 575px;
-			background-repeat: no-repeat;
-			display: flex;			
-			justify-content: center;
-			flex-direction: column;		
-			margin-top: 30px;	
-			margin-bottom: 0px;	
+
+		.weddingheading span {
+  			display: inline-block;
+  			/*vertical-align: middle;*/
+  			margin-top: 250px;
 		}
 
 		body, form {
@@ -32,8 +27,6 @@
 			*/
 			min-width: 768px;
 		}
-
-
 
 		@font-face {
 			font-family: 'wedding-heading';
@@ -75,7 +68,9 @@
 		.subsize{
 			font-size: 24px;
 		}
+		.submitbutton {
 
+		}
 		.midheading {
 
 		}
@@ -123,6 +118,7 @@
 			font-family: 'kepler-std', sans-serif;
 			font-size: 28px;
 			color: #403D30;
+			text-align: center;
 			/*color: #565a5c;*/
 		}
 
@@ -136,7 +132,10 @@
 			margin-top: 30px;
 		}
 		.midheadingspacing{
-			margin-bottom: 20px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			text-align: center;
+
 		}
 
 		.formitemholder{
@@ -148,7 +147,11 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
 		}
+		.breakvisualitem {
+			margin: 20px;
+		} 
 
 		.footercontainer 
 		{
@@ -173,6 +176,29 @@
 		.rsvpinput {
 			min-width: 500px;
 		}
+
+		.buttonsize {
+			padding: 10px;
+			border: none;
+			border-radius: 2px;
+		}
+		.rsvpbutton {
+
+			color: white;
+			background-color: black;
+			border:none;
+		}
+		.rsvbsent {
+			background-color: white;
+			color: black;
+			border: solid 1px;
+		}
+
+		.rsvpbutton:hover {
+			background-color: #A9A9A9;
+			color:black;
+		}
+
 		.blank128x128{
 			height: 128px;
 			width: 128px;
@@ -213,7 +239,8 @@
 		}
 
 		select {
-			width: 300px;
+			width: 250px;
+			border: 20px;
 		}
 
 		input, select {
