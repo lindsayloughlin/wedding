@@ -1,4 +1,40 @@
 	
+
+@media (max-width: 1156px) {
+	.midcontainer {
+			margin-left: 10%;
+		margin-right: 10%;
+		min-height: 1024px;
+		max-width: 2150;
+		/*background-color: yellow;*/
+	}
+}		
+
+@media (min-width: 1156px) {
+	.midcontainer {
+			margin-left: auto;
+		margin-right: auto;
+		min-height: 1024px;
+		max-width: 1024px;
+		/*background-color: red;*/
+	}
+}
+		hr {
+			background-color: #A9A8A8; height: 1px; border: 0;
+		}
+		.internallink {
+			text-decoration: none;
+			font-weight: 600;
+		}
+
+		.sectionitemtext{
+			background-color: white;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			/*margin: 10px;*/
+		}
+
+
 		.headimage {
 			display: inline-block;
 			background-image: url("couple-shot-sillouett.jpg");
@@ -94,12 +130,6 @@
 
 
 
-		.midcontainer {
-				margin-left: 10%;
-			margin-right: 10%;
-			min-height: 1024px;
-			max-width: 2150;
-		}
 		.coupleheaderimage{
 			width: 100%;
 		}
@@ -107,12 +137,7 @@
 			display: flex;
 			background-color: white;
 		}
-		.sectionitemtext{
-			background-color: white;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			/*margin: 10px;*/
-		}
+
 
 		.sectionitemfont {
 			font-family: 'kepler-std', sans-serif;
@@ -243,8 +268,7 @@
 			border: 20px;
 		}
 
-		input, select {
-			
+		input, select {			
 			height: 45px;
 		}
 
